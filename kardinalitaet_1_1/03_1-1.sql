@@ -43,7 +43,7 @@ ALTER TABLE design.servants
     FOREIGN KEY (cats_id)
     REFERENCES cats (id);
 
--- wichtig bei 1:1  UNIQUE im fk
+-- wichtig bei 1:1 UNIQUE im fk
 ALTER TABLE design.servants
   ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
 
