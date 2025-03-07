@@ -36,22 +36,24 @@ CREATE TABLE design.servants
 ) COMMENT 'Diener';
 
 -- Fremdschlüssel: DT
-ALTER TABLE servants
+ALTER TABLE design.servants
   ADD CONSTRAINT FK_cats_TO_servants
     FOREIGN KEY (cats_id)
     REFERENCES cats (id);
 
 -- wichtig bei 1:1  UNIQUE im fk
-ALTER TABLE servants
+ALTER TABLE design.servants
   ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
 
 -- Struktur: DT
 DESCRIBE design.servants;
 
 -- Inserts: DT
-
-
-
+INSERT INTO design.servants (id, servant_name, yrs_served, cats_id) VALUES 
+(DEFAULT, "Max", 5, 1),
+(DEFAULT, "Maxine", 2, 2),
+(DEFAULT, "Mohammed", 10, 3)
+;
 
 -- Inhalte: DT
 SELECT * FROM design.servants;
