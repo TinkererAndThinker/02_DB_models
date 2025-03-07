@@ -1,3 +1,5 @@
+\! cls
+
 -- Vorbereitungen
 
 DROP TABLE IF EXISTS design.servants;
