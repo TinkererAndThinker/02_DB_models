@@ -43,6 +43,8 @@ CREATE TABLE design.servants
   PRIMARY KEY (id)
 ) COMMENT 'Diener';
 
+
+
 ALTER TABLE design.servants
   ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
 
@@ -50,3 +52,11 @@ ALTER TABLE design.servants
   ADD CONSTRAINT FK_cats_TO_servants
     FOREIGN KEY (cats_id)
     REFERENCES cats (id);
+
+    
+INSERT INTO design.servants (id, servant_name, yrs_served, cats_id) VALUES 
+(DEFAULT, "Alfred", 5, 1),
+(DEFAULT, "James", 2, 2),
+(DEFAULT, "Jane", 10, 3)
+;
+DESCRIBE design.servants;
