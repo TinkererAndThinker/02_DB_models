@@ -5,7 +5,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -1,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -74,9 +74,53 @@
           "updateAt": 1741259400106,
           "createAt": 1741259340805
         }
+      },
+      "IwOlwRYRw-FhLCv5rRiRR": {
+        "id": "IwOlwRYRw-FhLCv5rRiRR",
+        "name": "cats",
+        "comment": "Tab mit den Katzen",
+        "columnIds": [
+          "MWzPAtvef8qCCNqmtYz-k"
+        ],
+        "seqColumnIds": [
+          "MWzPAtvef8qCCNqmtYz-k"
+        ],
+        "ui": {
+          "x": 87,
+          "y": 80,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 103,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1741261889302,
+          "createAt": 1741261803634
+        }
       }
     },
-    "tableColumnEntities": {},
+    "tableColumnEntities": {
+      "MWzPAtvef8qCCNqmtYz-k": {
+        "id": "MWzPAtvef8qCCNqmtYz-k",
+        "tableId": "IwOlwRYRw-FhLCv5rRiRR",
+        "name": "",
+        "comment": "",
+        "dataType": "VA",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1741261851824,
+          "createAt": 1741261837945
+        }
+      }
+    },
     "relationshipEntities": {},
     "indexEntities": {},
     "indexColumnEntities": {},
@@ -94,6 +138,24 @@
       1741259340804,
       1741259402236,
       {}
+    ],
+    "IwOlwRYRw-FhLCv5rRiRR": [
+      "tableEntities",
+      1741261803632,
+      1741261894040,
+      {
+        "name": 1741261817732,
+        "comment": 1741261826265
+      }
+    ],
+    "MWzPAtvef8qCCNqmtYz-k": [
+      "tableColumnEntities",
+      1741261837944,
+      -1,
+      {
+        "dataType": 1741261846311,
+        "options(notNull)": 1741261851823
+      }
     ]
   }
 }
