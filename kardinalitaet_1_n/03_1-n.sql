@@ -18,8 +18,9 @@ CREATE TABLE IF NOT EXISTS design.catmoms
 DESCRIBE design.catmoms;
 
 -- MT: Inserts
-INSERT INTO catmoms (id, cat_name, fur_color) VALUES (DEFAULT, "Grizabella", "white");
-INSERT INTO catmoms (id, cat_name, fur_color) VALUES (DEFAULT, "Mausi", "striped");
+INSERT INTO design.catmoms (id, cat_name, fur_color) VALUES 
+(DEFAULT, "Grizabella", "white"),
+(DEFAULT, "Mausi", "striped");
 
 -- MT: Inhalte
 SELECT * FROM design.catmoms;
