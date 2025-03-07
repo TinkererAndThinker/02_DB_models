@@ -1,4 +1,6 @@
 -- Vorbereitungen
+DROP Table IF EXISTS design.servants;
+DROP Table IF EXISTS design.cats;
 
 
 

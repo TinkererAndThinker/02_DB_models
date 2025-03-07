@@ -10,7 +10,7 @@
     "show": 511,
     "database": 4,
     "databaseName": "Design",
-    "canvasType": "ERD",
+    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -230,7 +230,7 @@
         "comment": "Fremdschlüssel",
         "dataType": "INT",
         "default": "",
-        "options": 8,
+        "options": 12,
         "ui": {
           "keys": 2,
           "widthName": 60,
@@ -239,7 +239,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741336160006,
+          "updateAt": 1741339399594,
           "createAt": 1741335801816
         }
       }
@@ -417,7 +417,8 @@
         "name": 1741335801813,
         "dataType": 1741335801813,
         "default": 1741335801813,
-        "comment": 1741336160005
+        "comment": 1741336160005,
+        "options(unique)": 1741339399592
       }
     ],
     "COxfnBkLEV5AgnELlzpja": [
