@@ -1,58 +1,58 @@
 
--- Vorbereitung
+# Vorbereitung
 
 
 /* Cats */
 
--- Mastertabelle: unverändert
+# Mastertabelle: unverändert
 
--- Struktur: MT
+# Struktur: MT
 
--- Inserts: MT (Mastertable)
+# Inserts: MT (Mastertable)
 
 
 /* SERVANTS */
 
--- Detailtabelle: Verbindung zur MT über Fremdschlüssel
+# Detailtabelle: Verbindung zur MT über Fremdschlüssel
 
 
 
 
--- Fremdschlüssel: DT
+# Fremdschlüssel: DT
 
 
 
 
--- wichtig bei 1:1  UNIQUE im fk
+# wichtig bei 1:1  UNIQUE im fk
 
 
 
--- Struktur: DT
+# Struktur: DT
 
--- Inserts: DT
+# Inserts: DT
 
 
--- Servants: Struktur
+# Servants: Struktur
 
 
 /*  PRODUCTS */
 
--- Products: ohne Fremdschlüssel
+# Products: ohne Fremdschlüssel
 
 
 
 
--- Products: Struktur
+# Products: Struktur
 
 
 
--- Products: Inserts
+# Products: Inserts
 
 
 
 
 
--- Products: Inhalte 
+# Products: Inhalte 
 
 
 
@@ -61,10 +61,10 @@
 
 
 
--- ServantsProducts (purchases)
+# ServantsProducts (purchases)
 
--- Purchases: Struktur
+# Purchases: Struktur
 
--- Purchases: Inserts (Kaufprozesse : Käufer - Produkt)
+# Purchases: Inserts (Kaufprozesse : Käufer - Produkt)
 
--- Purchases: Inhalte 
+# Purchases: Inhalte 
