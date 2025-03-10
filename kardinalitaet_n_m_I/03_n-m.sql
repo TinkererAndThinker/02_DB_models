@@ -55,8 +55,11 @@ SELECT * FROM design.products;
 -- ServantsProducts (purchases)
 CREATE TABLE IF NOT EXISTS design.purchases
 (
-  servants_id INT NOT NULL,
-  products_id INT NOT NULL
+  id          INT       NOT NULL AUTO_INCREMENT COMMENT 'PK',
+  servants_id INT       NOT NULL COMMENT 'FK',
+  products_id INT       NOT NULL COMMENT 'FK',
+  p_time      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Zeitpunkt',
+  PRIMARY KEY (id)
 );
 
 ALTER TABLE design.purchases
@@ -73,13 +76,15 @@ ALTER TABLE design.purchases
 DESCRIBE design.purchases;
 
 -- Purchases: Inserts (Kaufprozesse : Käufer - Produkt)
-INSERT INTO design.purchases (servants_id, products_id) VALUES 
-(1, 2);
-(1, 3),
-(2, 1),
-(2, 2),
-(2, 3),
-(2, 4);
+
+INSERT INTO design.purchases (id, servants_id, products_id, p_time) VALUES 
+(DEFAULT, 1 , 2, DEFAULT),
+(DEFAULT, 1, 3, DEFAULT), 
+(DEFAULT, 2, 1, DEFAULT),
+(DEFAULT, 2, 2, DEFAULT),
+(DEFAULT, 2, 3, DEFAULT),
+(DEFAULT, 2, 4, DEFAULT);
+
 
 
 -- Purchases: Inhalte 
