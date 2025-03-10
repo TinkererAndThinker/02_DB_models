@@ -2,7 +2,8 @@
 -- 04 SELECTS
 
 -- Einzeltabellen
-
+SELECT * FROM design.cats;
+SELECT * FROM design.servants;
 
 -- Inner Join 1 / Gesamte Kombi-Tabelle
 
